@@ -6,6 +6,56 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
 
   tableOfContents = [
     {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".md"],
+          "commentsOnly": true,
+          "name": "Markdown"
+        },
+        "sourcePath": "/Users/keith/git/node-kicks/README.md",
+        "projectPath": "README.md",
+        "targetPath": "index",
+        "firstHeader": {
+          "type": "heading",
+          "data": {
+            "level": 1,
+            "title": "node-kicks",
+            "slug": "node-kicks",
+            "isFileHeader": true
+          },
+          "depth": 1
+        },
+        "title": "node-kicks"
+      },
+      "depth": 1,
+      "outline": []
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".md"],
+          "commentsOnly": true,
+          "name": "Markdown"
+        },
+        "sourcePath": "/Users/keith/git/node-kicks/TODO.md",
+        "projectPath": "TODO.md",
+        "targetPath": "TODO",
+        "title": "TODO"
+      },
+      "depth": 1,
+      "outline": [
+        {
+          "type": "heading",
+          "data": {
+            "level": 2,
+            "title": "TODO",
+            "slug": "todo"
+          },
+          "depth": 2
+        }
+      ]
+    }, {
       "type": "folder",
       "data": {
         "path": "lib",
@@ -354,6 +404,48 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
               ]
             }
           ]
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "singleLineComment": ["//"],
+              "name": "JavaScript"
+            },
+            "sourcePath": "/Users/keith/git/node-kicks/lib/search.js",
+            "projectPath": "lib/search.js",
+            "targetPath": "lib/search",
+            "title": "search"
+          },
+          "depth": 2,
+          "outline": [
+            {
+              "type": "heading",
+              "data": {
+                "level": 2,
+                "title": "search",
+                "slug": "search"
+              },
+              "depth": 2
+            }
+          ]
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "singleLineComment": ["//"],
+              "name": "JavaScript"
+            },
+            "sourcePath": "/Users/keith/git/node-kicks/lib/version.js",
+            "projectPath": "lib/version.js",
+            "targetPath": "lib/version",
+            "title": "version"
+          },
+          "depth": 2,
+          "outline": []
         }
       ]
     }
