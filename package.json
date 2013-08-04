@@ -20,5 +20,9 @@
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/sehrgut/node-kicks/issues"
+  },
+  "dependencies": {
+    "lodash": "1.3.x",
+    "q": "0.9.x"
   }
 }
