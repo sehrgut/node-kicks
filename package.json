@@ -1,8 +1,13 @@
 {
   "name": "kicks",
   "version": "0.0.1",
-  "description": "kickstarter search and project info API",
+  "description": "kickstarter API wrapper",
   "main": "index.js",
+  "homepage": "https://github.com/sehrgut/node-kicks",
+  "directories": {
+  	"lib": "lib",
+  	"doc": "doc"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,8 +18,7 @@
   "keywords": [
     "kickstarter",
     "api",
-    "social",
-    "media"
+    "social media"
   ],
   "author": "Keith Beckman <kbeckman@becknet.com>",
   "license": "BSD",
@@ -24,5 +28,8 @@
   "dependencies": {
     "lodash": "1.3.x",
     "q": "0.9.x"
+  },
+  "devDependencies": {
+    "groc": "latest"
   }
 }
