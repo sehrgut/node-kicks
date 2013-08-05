@@ -1,4 +1,4 @@
-var kicks = require('./');
+var kicks = require('../');
 var Q = require('q');
 var _ = require('lodash');
 

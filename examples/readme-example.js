@@ -1,4 +1,4 @@
-var kicks = require('./');
+var kicks = require('../');
 var config = require('./config');
 
 kicks.Client.fromEmail(config.email, config.password, null, function (err, client) {
