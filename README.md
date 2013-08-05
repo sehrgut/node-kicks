@@ -25,4 +25,4 @@ kickstarter API for node
 
 ## API Reference
 Currently, the only API reference is the groc docs, so you'll have to open
-the ./docs/index.html in your browser to get at them.
+the ./doc/index.html in your browser to get at them.
