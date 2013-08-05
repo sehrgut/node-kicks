@@ -56,3 +56,4 @@ Q.nfcall(kicks.Client.fromEmail, config.email, config.password, null)
 	return Q.all([printEndpoints(), printSelf()]);
 })
 .catch(console.error);
+

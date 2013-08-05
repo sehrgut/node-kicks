@@ -1,3 +1,29 @@
 <!DOCTYPE html><html lang="en"><head><title>index</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="index"><meta name="groc-project-path" content="README.md"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path">README.md</div></div><div id="document"><div class="segment"><div class="comments"><div class="wrapper"><h1 id="node-kicks">node-kicks</h1>
 
-<p>kickstarter API for node, covering search and project details</p></div></div></div></div></body></html>
+<p>kickstarter API for node</p>
+
+<h2 id="quick-start">Quick Start</h2>
+
+<pre><code>var kicks = require('./');
+var config = require('./config');
+
+kicks.Client.fromEmail(config.email, config.password, null, function (err, client) {
+    if (err) console.error(err);
+    else client.search_projects('coffee', 50, function (err, projects) {
+        if (err) console.error(err);
+        else console.log(projects.map(function (project) {
+            return {
+                name: project.name,
+                blurb: project.blurb,
+                location: project.location.name,
+                url: project.urls.web.project_short
+            };
+        }));
+    });
+});
+</code></pre>
+
+<h2 id="api-reference">API Reference</h2>
+
+<p>Currently, the only API reference is the groc docs, so you'll have to open
+the ./docs/index.html in your browser to get at them.</p></div></div></div></div></body></html>
