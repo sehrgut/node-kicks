@@ -5,7 +5,7 @@ kickstarter API for node
 
 ## Quick Start
 
-	var kicks = require('./');
+	var kicks = require('kicks');
 	var config = require('./config');
 
 	kicks.Client.fromEmail(config.email, config.password, null, function (err, client) {
